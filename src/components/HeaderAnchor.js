@@ -1,8 +1,11 @@
 function HeaderAnchor(props) {
   return (
-    <a href="/" className="btn-header">
-      <h2 className="header-bold-text">{props.text}</h2>
-    </a>
+    <h2 className="header-bold-text">
+      <a href={props.path} className="btn-header">
+        {props.text}
+      </a>
+      <p className="soon">{props.info}</p>
+    </h2>
   );
 }
 

@@ -11,8 +11,8 @@ function Navbar() {
       </div>
       <div className="navbar-right">
         <Socials />
-        <HeaderAnchor text={"Staking"} />
-        <HeaderAnchor text={"NFT P2E GAME"} />
+        <HeaderAnchor text={"Staking"} path={"https://staking.realfevr.com/"} />
+        <HeaderAnchor text={"NFT P2E GAME"} info={"(SOON)"} />
         <PlayFantasy />
       </div>
     </div>
