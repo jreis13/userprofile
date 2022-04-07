@@ -2,6 +2,8 @@ import "./style/Main.scss";
 import Logo from "./Logo";
 import MainNav from "./MainNav";
 import UserInfo from "./UserInfo";
+import MiddleNav from "./MiddleNav";
+import ProfileInformation from "./ProfileInformation";
 
 function MainPage() {
   return (
@@ -14,6 +16,7 @@ function MainPage() {
           <MainNav />
         </div>
       </div>
+
       <div className="user-info">
         <UserInfo
           username={"@JReis13"}
@@ -22,6 +25,13 @@ function MainPage() {
           staked={"0"}
           join={"Joined April, 2022"}
         />
+      </div>
+
+      <div className="middle-nav">
+        <MiddleNav />
+      </div>
+      <div className="profile-information">
+        <ProfileInformation />
       </div>
     </div>
   );

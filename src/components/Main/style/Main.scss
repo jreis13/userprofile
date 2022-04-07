@@ -103,6 +103,7 @@
     font-weight: 700;
     color: #118139;
     letter-spacing: 1.5px;
+    text-shadow: 0.02px 0 1px #000;
   }
 
   .fevr-stats {
@@ -172,6 +173,76 @@
       border-radius: 50%;
       box-shadow: 0.2px 0.5px 0.2px 0.2px black;
       opacity: 0.7;
+    }
+  }
+}
+
+.middle-navbar {
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.224);
+  padding-bottom: 1em;
+
+  .middle-nav-item {
+    text-decoration: none;
+    opacity: 0.5;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    text-shadow: 0.5px 0.5px 0.5px #000;
+  }
+
+  .active {
+    opacity: 1;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.95em;
+  }
+}
+
+.profile-info {
+  background: black;
+
+  .profile-info-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 20em 20em;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    padding-top: 4em;
+
+    .profile-info-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item-top-info {
+        // display: flex;
+        // flex-direction: column;
+      }
+
+      .rank {
+        color: #30e06f;
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .level-text {
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+
+      .alt-text {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
   }
 }
