@@ -1,5 +1,5 @@
-import logo from "../assets/logo-horizontal.png";
-import beta from "../assets/beta.png";
+import logo from "../../assets/logo-horizontal.png";
+import beta from "../../assets/beta.png";
 
 function Logo() {
   return (

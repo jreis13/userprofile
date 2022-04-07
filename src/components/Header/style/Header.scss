@@ -1,0 +1,81 @@
+.navbar {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+
+  .btn-header {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    img {
+      &:hover {
+        transform: scale(1.1) rotate(-45deg);
+        transform-origin: center center;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  .header-bold-text {
+    font-size: 13.5px;
+    line-height: 14px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    padding-right: 5rem;
+    cursor: pointer;
+  }
+
+  .navbar-left {
+    padding-left: 10rem;
+
+    .token1 {
+      padding-right: 10px;
+    }
+  }
+
+  .navbar-right {
+    padding-right: 10rem;
+    display: flex;
+    align-items: center;
+
+    .soon {
+      font-weight: 200;
+    }
+
+    .btn-play-fantasy {
+      border: solid 1px rgba(255, 255, 255, 0.1);
+      padding: 12px 12px 10px;
+      color: #2e457e;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      background: linear-gradient(169.98deg, #ffffff 33.75%, #6a84cb 184.73%);
+      box-shadow: 0px 10px 20px rgba(29, 53, 117, 0.3);
+      display: inline-block;
+
+      &:hover {
+        color: black;
+        box-shadow: 0 25px 50px rgba(8, 14, 31, 0.5);
+        text-shadow: 0 25px 50px rgba(8, 14, 31, 0.5);
+      }
+    }
+  }
+}

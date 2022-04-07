@@ -1,3 +1,4 @@
+import "./style/Common.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTelegram,

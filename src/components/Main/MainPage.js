@@ -1,3 +1,4 @@
+import "./style/Main.scss";
 import Logo from "./Logo";
 import MainNav from "./MainNav";
 import UserInfo from "./UserInfo";
@@ -17,8 +18,8 @@ function MainPage() {
         <UserInfo
           username={"@JReis13"}
           user_id={"0x88…87E005DAd5"}
-          owned={"127,812,000"}
-          staked={"127,812,000"}
+          owned={"0"}
+          staked={"0"}
           join={"Joined April, 2022"}
         />
       </div>

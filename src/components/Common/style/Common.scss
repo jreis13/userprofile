@@ -1,0 +1,15 @@
+.socials {
+  padding-right: 5rem;
+
+  .social-link {
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.8;
+    padding: 1rem;
+
+    &:hover {
+      opacity: 1;
+      transition: 0.4s ease-in-out;
+    }
+  }
+}

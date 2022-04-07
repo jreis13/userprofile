@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFutbol } from "@fortawesome/free-regular-svg-icons";
+
 function PlayFantasy() {
   return (
     <div>

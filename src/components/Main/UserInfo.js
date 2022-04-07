@@ -1,8 +1,8 @@
-import avatar from "../assets/avatar.jpg";
-import token1 from "../assets/token1.png";
-import rookie from "../assets/rookie.png";
-import champ from "../assets/champ.png";
-import firstedi from "../assets/first-edition.png";
+import avatar from "../../assets/avatar.jpg";
+import token1 from "../../assets/token1.png";
+import rookie from "../../assets/rookie.png";
+import champ from "../../assets/champ.png";
+import firstedi from "../../assets/first-edition.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
@@ -27,11 +27,11 @@ function UserInfo(props) {
       <div className="fevr-stats">
         <p className="fevr-stat">
           <img className="mini-token" src={token1} alt="Real Fevr token"></img>
-          {props.owned} OWNED
+          <strong>{props.owned}</strong>OWNED
         </p>
         <p className="fevr-stat">
           <img className="mini-token" src={token1} alt="Real Fevr token"></img>
-          {props.staked} STAKED
+          <strong>{props.staked}</strong>STAKED
         </p>
       </div>
 
@@ -45,14 +45,14 @@ function UserInfo(props) {
 
       <div className="user-stats">
         <div className="user-stat">
-          <h3 className="user-stat-title">133 / 27500 XP</h3>
+          <h3 className="user-stat-title">1 / 10 XP</h3>
           <p className="user-stat-text">Next Level</p>
         </div>
 
         <div className="separator"></div>
 
         <div className="user-stat">
-          <h3 className="user-stat-title">2346</h3>
+          <h3 className="user-stat-title">1</h3>
           <p className="user-stat-text">Moments Owned</p>
         </div>
 

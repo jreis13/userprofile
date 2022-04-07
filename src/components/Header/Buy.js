@@ -1,4 +1,4 @@
-import token1 from "../assets/token1.png";
+import token1 from "../../assets/token1.png";
 
 function Buy(props) {
   return (

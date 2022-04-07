@@ -1,6 +1,7 @@
+import "./style/Header.scss";
 import Buy from "./Buy";
-import Socials from "./Socials";
-import HeaderAnchor from "./HeaderAnchor";
+import Socials from "../Common/Socials";
+import HeaderAnchor from "../Header/HeaderAnchor";
 import PlayFantasy from "./PlayFantasy";
 
 function Navbar() {

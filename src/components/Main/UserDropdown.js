@@ -1,4 +1,4 @@
-import avatar from "../assets/avatar.jpg";
+import avatar from "../../assets/avatar.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
