@@ -178,6 +178,7 @@
 }
 
 .middle-navbar {
+  margin-bottom: 0;
   text-transform: uppercase;
   list-style: none;
   display: flex;
@@ -205,21 +206,26 @@
 
 .profile-info {
   background: black;
+  display: flex;
+  justify-content: center;
 
   .profile-info-grid {
     list-style: none;
     display: grid;
-    grid-template-columns: 50em 20em;
+    grid-template-columns: auto auto;
     grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    justify-content: center;
     padding-top: 4em;
 
     .profile-info-item {
-      align-items: center;
-      display: flex;
-      justify-content: space-evenly;
+      padding: 0 10em;
+      .item-top-info {
+        display: flex;
+        align-items: center;
+      }
+
+      .borderless {
+        padding-right: 1em;
+      }
 
       .rank {
         color: #30e06f;
@@ -231,12 +237,28 @@
         color: #fff;
         font-size: 11px;
         text-transform: uppercase;
+        letter-spacing: 0.2em;
+        padding: 1.5em 0 0 1.5em;
       }
 
       .alt-text {
         color: #fff;
         font-size: 16px;
         font-weight: 400;
+      }
+
+      .progress-bar {
+        height: 2.5em;
+        background-color: #51495f;
+        border-radius: 2em;
+        text-align: center;
+      }
+
+      .reward {
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 30px;
       }
     }
   }
