@@ -1,41 +1,33 @@
 import { useState } from "react";
 
 function MiddleNav() {
-  const [isActive, setActive] = useState(false);
+  const links = [
+    "Collection",
+    "Transactions",
+    "Achievements",
+    "Rewards",
+    "Notifications",
+  ];
 
-  const toggleClass = (e) => {
-    e.preventDefault();
-    setActive(!isActive);
-  };
+  const [active, setActive] = useState(null);
 
   return (
     <div>
       <ul className="middle-navbar">
-        <li>
-          <a className="middle-nav-item" onClick={toggleClass} href="/">
-            Collection
-          </a>
-        </li>
-        <li>
-          <a className="middle-nav-item" onClick={toggleClass} href="/">
-            Transactions
-          </a>
-        </li>
-        <li>
-          <a className="middle-nav-item active" onClick={toggleClass} href="/">
-            Achievements
-          </a>
-        </li>
-        <li>
-          <a className="middle-nav-item" onClick={toggleClass} href="/">
-            Rewards
-          </a>
-        </li>
-        <li>
-          <a className="middle-nav-item" onClick={toggleClass} href="/">
-            Notifications
-          </a>
-        </li>
+        {links.map((link) => (
+          <li>
+            <a
+              href="/"
+              className={`middle-nav-item ${active === link && "active"}`}
+              onClick={(e) => {
+                e.preventDefault();
+                setActive(link);
+              }}
+            >
+              {link}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

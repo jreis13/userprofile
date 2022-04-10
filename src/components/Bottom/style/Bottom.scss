@@ -22,6 +22,10 @@
     padding-left: 3em;
   }
 
+  .bottom-bg {
+    background: linear-gradient(transparent 0%, #30e06f 500%);
+  }
+
   .binance {
     padding-top: 10em;
     display: flex;
@@ -29,18 +33,28 @@
   }
 
   .footer {
-    padding-top: 10em;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
     align-content: center;
+    padding: 10em 2em 0 4em;
+
+    .socials {
+      padding: 0;
+    }
   }
 
   .terms {
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .footer-list {
+    margin-bottom: 0;
     list-style: none;
+    padding: 0;
     display: flex;
 
     .footer-list-item {
@@ -58,6 +72,7 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: #fff;
+    align-self: flex-end;
     padding-right: 1em;
   }
 }

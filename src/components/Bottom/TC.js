@@ -33,7 +33,7 @@ function TC() {
           </a>
         </li>
       </ul>
-      <p className="reserved">©2022 REALFEVR </p>
+      <p className="reserved">©2022 REALFEVR • All Rights Reserved </p>
     </div>
   );
 }

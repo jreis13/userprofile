@@ -8,10 +8,12 @@ function Bottom() {
     <div className="bottom">
       <h2 className="bottom-title">Official Partners</h2>
       <Partners />
-      <div className="binance">
-        <img src={binance} alt="Powered by Binance"></img>
+      <div className="bottom-bg">
+        <div className="binance">
+          <img src={binance} alt="Powered by Binance"></img>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
