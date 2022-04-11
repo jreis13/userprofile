@@ -20,8 +20,10 @@ function UserInfo(props) {
 
       <p className="user-name-lg">{props.username}</p>
 
-      <p className="user-id">
-        {props.user_id} <FontAwesomeIcon icon={faUpRightFromSquare} />
+      <p>
+        <a href="/" className="user-id">
+          {props.user_id} <FontAwesomeIcon icon={faUpRightFromSquare} />
+        </a>
       </p>
 
       <div className="fevr-stats">
@@ -45,7 +47,7 @@ function UserInfo(props) {
 
       <div className="user-stats">
         <div className="user-stat">
-          <h3 className="user-stat-title">1 / 10 XP</h3>
+          <h3 className="user-stat-title">1 / 100000 XP</h3>
           <p className="user-stat-text">Next Level</p>
         </div>
 
@@ -59,7 +61,7 @@ function UserInfo(props) {
         <div className="separator"></div>
 
         <div className="user-stat">
-          <h3 className="user-stat-title">Top 1%</h3>
+          <h3 className="user-stat-title">Bottom 1%</h3>
           <p className="user-stat-text">Rank</p>
         </div>
       </div>

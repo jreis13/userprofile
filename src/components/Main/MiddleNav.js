@@ -9,7 +9,7 @@ function MiddleNav() {
     "Notifications",
   ];
 
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState(links[2]);
 
   return (
     <div>
