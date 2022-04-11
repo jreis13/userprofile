@@ -1,5 +1,6 @@
 {
   "name": "userprofile",
+  "homepage": "https://jreis13.github.io/userprofile",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
