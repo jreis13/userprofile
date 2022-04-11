@@ -3,6 +3,18 @@ import pentagon from "../../assets/pentagon.png";
 import legendary from "../../assets/legendary.png";
 
 function ProfileInformation() {
+  function handleClick(e) {
+    e.preventDefault();
+
+    const clicked = document.getElementById("claim");
+    const clickedXP = document.getElementById("click-reward");
+
+    console.log(clicked);
+    clicked.innerHTML = "Complete & claimed";
+    clickedXP.classList = "reward-faded";
+    clicked.classList = "inner-bar-claimed";
+  }
+
   return (
     <div className="profile-info">
       <ul className="profile-info-grid">
@@ -58,9 +70,17 @@ function ProfileInformation() {
             </div>
           </div>
           <div className="progress-bar">
-            <div className="inner-bar-complete">Click to claim reward</div>
+            <div
+              id="claim"
+              onClick={handleClick}
+              className="inner-bar-complete"
+            >
+              Click to claim reward
+            </div>
           </div>
-          <div className="reward">150 XP</div>
+          <div id="click-reward" className="reward">
+            150 XP
+          </div>
         </li>
 
         <li className="profile-info-item">
